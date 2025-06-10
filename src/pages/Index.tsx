@@ -34,7 +34,7 @@ const Index = () => {
       <section 
         className="relative py-32 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1920&q=80')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i0.wp.com/realwoodfloors.com/wp-content/uploads/2023/05/2019_8_steadfast_honest_Nashville_Pearson_1.jpg?fit=800%2C534&ssl=1')`
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
