@@ -31,15 +31,20 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-amber-50 to-orange-100 py-20">
+      {/* Hero Section with Banner */}
+      <section 
+        className="relative py-32 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1920&q=80')`
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Premium Flooring
-              <span className="text-amber-700 block">Solutions</span>
+              <span className="text-amber-400 block">Solutions</span>
             </h1>
-            <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
               Licensed, family-owned flooring company with 15+ years of experience. 
               We specialize in hardwood, laminate, vinyl, tile installation, and refinishing services.
             </p>
@@ -47,7 +52,7 @@ const Index = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 text-lg"
+                className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg"
               >
                 <Link to="/contact">
                   <Phone className="w-5 h-5 mr-2" />
@@ -58,7 +63,7 @@ const Index = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-amber-700 text-amber-700 hover:bg-amber-50 px-8 py-3 text-lg"
+                className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 text-lg"
               >
                 <Link to="/gallery">
                   <Home className="w-5 h-5 mr-2" />
