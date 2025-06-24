@@ -5,20 +5,20 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      location: "Honolulu, HI",
+      location: "Orlando, FL",
       text: "Top Flooring Services transformed our entire home with beautiful hardwood floors. The team was professional, on time, and the quality exceeded our expectations!",
       rating: 5
     },
     {
       name: "Mike Chen",
-      location: "Pearl City, HI",
+      location: "Orlando, FL",
       text: "We needed our kitchen tile replaced and they did an amazing job. Fair pricing, quality work, and great communication throughout the project.",
       rating: 5
     },
     {
       name: "Lisa Rodriguez",
-      location: "Kaneohe, HI",
-      text: "Had our old hardwood floors refinished and they look brand new! The family-owned business really cares about customer satisfaction.",
+      location: "Orlando, FL",
+      text: "Had our old floors demolished and new vinyl installed - they look brand new! The family-owned business really cares about customer satisfaction.",
       rating: 5
     }
   ];

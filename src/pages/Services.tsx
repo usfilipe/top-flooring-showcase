@@ -12,9 +12,8 @@ const Services = () => {
       features: [
         "Solid hardwood flooring",
         "Engineered hardwood systems",
-        "Custom staining and finishes",
         "Subfloor preparation",
-        "Professional sanding and finishing"
+        "Professional installation"
       ],
       image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=600&q=80"
     },
@@ -43,16 +42,16 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=600&q=80"
     },
     {
-      title: "Floor Refinishing",
-      description: "Restore your existing hardwood floors to their original beauty and luster.",
+      title: "Demolition Services",
+      description: "Professional demolition and removal services to prepare your space for new flooring.",
       features: [
-        "Professional sanding",
-        "Stain color matching",
-        "Multiple finish options",
-        "Repair of scratches and dents",
-        "Protective topcoat application"
+        "Safe floor removal",
+        "Debris cleanup and disposal",
+        "Subfloor assessment",
+        "Site preparation",
+        "Environmental safety compliance"
       ],
-      image: "https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
     }
   ];
 
@@ -66,8 +65,8 @@ const Services = () => {
               Our Flooring Services
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Comprehensive flooring solutions from installation to refinishing, 
-              backed by 15+ years of experience and craftsmanship.
+              Comprehensive flooring solutions from installation to demolition, 
+              backed by 8+ years of experience and craftsmanship.
             </p>
           </div>
         </div>

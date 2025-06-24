@@ -23,9 +23,9 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=600&q=80"
     },
     {
-      title: "Floor Refinishing",
-      description: "Restore your hardwood floors to their original beauty with our refinishing services.",
-      image: "https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&w=600&q=80"
+      title: "Demolition Services",
+      description: "Professional demolition and removal services to prepare your space for new flooring.",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
     }
   ];
 
@@ -45,8 +45,8 @@ const Index = () => {
               <span className="text-amber-400 block">Solutions</span>
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-              Licensed, family-owned flooring company with 15+ years of experience. 
-              We specialize in hardwood, laminate, vinyl, tile installation, and refinishing services.
+              Licensed, family-owned flooring company with 8+ years of experience. 
+              We specialize in hardwood, laminate, vinyl, tile installation, and demolition services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
@@ -95,10 +95,10 @@ const Index = () => {
             </div>
             <div className="text-center">
               <div className="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-amber-700">15+</span>
+                <span className="text-2xl font-bold text-amber-700">8+</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Years Experience</h3>
-              <p className="text-gray-600">Over 15 years of experience in professional flooring installation.</p>
+              <p className="text-gray-600">Over 8 years of experience in professional flooring installation.</p>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ const Index = () => {
               Our Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From hardwood installation to floor refinishing, we provide comprehensive flooring solutions.
+              From hardwood installation to demolition services, we provide comprehensive flooring solutions.
             </p>
           </div>
           

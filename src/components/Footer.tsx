@@ -13,8 +13,8 @@ const Footer = () => {
               Top Flooring Services
             </h3>
             <p className="text-gray-300 mb-4">
-              Licensed, family-owned flooring company with 15+ years of experience. 
-              We specialize in hardwood, laminate, vinyl, tile installation, and refinishing services.
+              Licensed, family-owned flooring company with 8+ years of experience. 
+              We specialize in hardwood, laminate, vinyl, tile installation, and demolition services.
             </p>
             <div className="flex space-x-4">
               <a
@@ -71,9 +71,9 @@ const Footer = () => {
             <div className="space-y-2 text-gray-300">
               <p>
                 <Phone className="w-4 h-4 inline mr-2" />
-                (808) 123-4567
+                (689) 255-7378
               </p>
-              <p>contact@topflooring.com</p>
+              <p>roberto.topflooring@gmail.com</p>
               <p>[Insert your city/state here]</p>
               <p className="text-sm mt-4">
                 Mon-Fri: 8:00 AM - 6:00 PM<br />

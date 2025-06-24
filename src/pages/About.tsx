@@ -32,7 +32,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded over 15 years ago, Top Flooring Services has been serving the community 
+                  Founded over 8 years ago, Top Flooring Services has been serving the community 
                   with premium flooring solutions. What started as a small family business has grown 
                   into a trusted name in the flooring industry, while maintaining our core values 
                   of quality, integrity, and customer satisfaction.
@@ -128,11 +128,11 @@ const About = () => {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                15+ Years of Excellence
+                8+ Years of Excellence
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  With over 15 years in the flooring industry, we've completed hundreds 
+                  With over 8 years in the flooring industry, we've completed hundreds 
                   of successful projects across residential and commercial properties. 
                   Our experience spans all types of flooring materials and installation techniques.
                 </p>
@@ -144,7 +144,7 @@ const About = () => {
               </div>
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-amber-700">500+</div>
+                  <div className="text-3xl font-bold text-amber-700">300+</div>
                   <div className="text-gray-600">Projects Completed</div>
                 </div>
                 <div className="text-center">
