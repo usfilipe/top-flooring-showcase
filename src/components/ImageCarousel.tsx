@@ -30,84 +30,92 @@ const ImageCarousel = ({ images, initialIndex = 0, onClose, projectTitle }: Imag
 
   return (
     <div 
-      className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center"
+      className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4"
       onClick={onClose}
       onKeyDown={handleKeyDown}
       tabIndex={0}
     >
-      <div className="relative max-w-6xl max-h-[90vh] w-full mx-4" onClick={(e) => e.stopPropagation()}>
-        {/* Close button */}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="absolute top-4 right-4 z-10 bg-black bg-opacity-50 hover:bg-opacity-70 text-white"
-          onClick={onClose}
-        >
-          <X className="w-6 h-6" />
-        </Button>
+      <div className="relative max-w-4xl w-full bg-white rounded-lg shadow-2xl" onClick={(e) => e.stopPropagation()}>
+        {/* Header with title and close button */}
+        <div className="flex justify-between items-center p-4 border-b">
+          <h3 className="text-xl font-semibold text-gray-900">{projectTitle}</h3>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={onClose}
+            className="text-gray-500 hover:text-gray-700"
+          >
+            <X className="w-5 h-5" />
+          </Button>
+        </div>
 
-        {/* Navigation buttons */}
-        {images.length > 1 && (
-          <>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-50 hover:bg-opacity-70 text-white"
-              onClick={goToPrevious}
-            >
-              <ChevronLeft className="w-8 h-8" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-50 hover:bg-opacity-70 text-white"
-              onClick={goToNext}
-            >
-              <ChevronRight className="w-8 h-8" />
-            </Button>
-          </>
-        )}
-
-        {/* Main image */}
-        <div className="relative">
-          <img
-            src={images[currentIndex]?.src}
-            alt={images[currentIndex]?.alt}
-            className="w-full h-full max-h-[80vh] object-contain rounded-lg"
-          />
-          
-          {/* Image counter and title */}
-          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-4 rounded-b-lg">
-            <h3 className="text-lg font-semibold">{projectTitle}</h3>
-            <p className="text-sm text-gray-300">{images[currentIndex]?.alt}</p>
+        {/* Main image container */}
+        <div className="relative p-4">
+          <div className="relative bg-gray-100 rounded-lg overflow-hidden">
+            <img
+              src={images[currentIndex]?.src}
+              alt={images[currentIndex]?.alt}
+              className="w-full h-80 object-cover"
+            />
+            
+            {/* Navigation buttons */}
             {images.length > 1 && (
-              <p className="text-xs text-gray-400 mt-1">
-                {currentIndex + 1} of {images.length}
-              </p>
+              <>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800"
+                  onClick={goToPrevious}
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800"
+                  onClick={goToNext}
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </Button>
+              </>
             )}
+
+            {/* Image counter */}
+            {images.length > 1 && (
+              <div className="absolute bottom-2 right-2 bg-black bg-opacity-60 text-white px-2 py-1 rounded text-sm">
+                {currentIndex + 1} / {images.length}
+              </div>
+            )}
+          </div>
+
+          {/* Image description */}
+          <div className="mt-3">
+            <p className="text-gray-600 text-sm">{images[currentIndex]?.alt}</p>
           </div>
         </div>
 
         {/* Thumbnail strip */}
         {images.length > 1 && (
-          <div className="flex justify-center mt-4 space-x-2 overflow-x-auto pb-2">
-            {images.map((image, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
-                  index === currentIndex 
-                    ? "border-amber-400 opacity-100" 
-                    : "border-transparent opacity-60 hover:opacity-80"
-                }`}
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover"
-                />
-              </button>
-            ))}
+          <div className="px-4 pb-4">
+            <div className="flex justify-center space-x-2 overflow-x-auto">
+              {images.map((image, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`flex-shrink-0 w-16 h-16 rounded-md overflow-hidden border-2 transition-all ${
+                    index === currentIndex 
+                      ? "border-amber-400" 
+                      : "border-gray-200 hover:border-gray-300"
+                  }`}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </div>
