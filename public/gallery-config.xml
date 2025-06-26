@@ -10,7 +10,6 @@
   </categories>
   
   <projects>
-    <!-- Hardwood Projects -->
     <project id="1" title="Modern Living Room Hardwood" category="hardwood" description="Beautiful oak hardwood flooring installation in a contemporary living space.">
       <images>
         <image src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80" alt="Modern Living Room Hardwood - Main View" />
@@ -19,94 +18,40 @@
       </images>
     </project>
     
-    <project id="2" title="Open Concept Hardwood" category="hardwood" description="Seamless hardwood installation throughout open floor plan.">
+    <project id="2" title="Kitchen Tile Installation" category="tile" description="Elegant ceramic tile flooring with custom pattern design.">
       <images>
-        <image src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80" alt="Open Concept Hardwood - Main View" />
-        <image src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=800&q=80" alt="Open Concept Hardwood - Living Area" />
-        <image src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Open Concept Hardwood - Kitchen Connection" />
-      </images>
-    </project>
-
-    <project id="3" title="Rustic Hardwood Kitchen" category="hardwood" description="Warm rustic hardwood flooring perfect for family kitchens.">
-      <images>
-        <image src="https://images.unsplash.com/photo-1556912167-f556f1da3b3c?auto=format&fit=crop&w=800&q=80" alt="Rustic Hardwood Kitchen - Main View" />
-        <image src="https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=800&q=80" alt="Rustic Hardwood Kitchen - Detail" />
-        <image src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80" alt="Rustic Hardwood Kitchen - Wide View" />
+        <image src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80" alt="Kitchen Tile Installation - Main View" />
+        <image src="https://images.unsplash.com/photo-1556912167-f556f1da3b3c?auto=format&fit=crop&w=800&q=80" alt="Kitchen Tile Installation - Pattern Detail" />
       </images>
     </project>
     
-    <!-- Vinyl & Laminate Projects -->
-    <project id="4" title="Luxury Vinyl Plank Bedroom" category="vinyl" description="Water-resistant luxury vinyl plank flooring in master bedroom.">
+    <project id="3" title="Luxury Vinyl Plank Bedroom" category="vinyl" description="Water-resistant luxury vinyl plank flooring in master bedroom.">
       <images>
         <image src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80" alt="Luxury Vinyl Plank Bedroom - Main View" />
         <image src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Luxury Vinyl Plank Bedroom - Close Up" />
         <image src="https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=800&q=80" alt="Luxury Vinyl Plank Bedroom - Full Room" />
       </images>
     </project>
-
-    <project id="5" title="Modern Laminate Office" category="vinyl" description="Durable laminate flooring perfect for home offices.">
-      <images>
-        <image src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80" alt="Modern Laminate Office - Main View" />
-        <image src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=800&q=80" alt="Modern Laminate Office - Detail" />
-        <image src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80" alt="Modern Laminate Office - Wide Angle" />
-      </images>
-    </project>
-
-    <project id="6" title="Vinyl Plank Living Room" category="vinyl" description="Stylish vinyl plank flooring with natural wood appearance.">
-      <images>
-        <image src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80" alt="Vinyl Plank Living Room - Main View" />
-        <image src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Vinyl Plank Living Room - Close Up" />
-        <image src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80" alt="Vinyl Plank Living Room - Detail" />
-      </images>
-    </project>
     
-    <!-- Tile & Stone Projects -->
-    <project id="7" title="Kitchen Tile Installation" category="tile" description="Elegant ceramic tile flooring with custom pattern design.">
-      <images>
-        <image src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80" alt="Kitchen Tile Installation - Main View" />
-        <image src="https://images.unsplash.com/photo-1556912167-f556f1da3b3c?auto=format&fit=crop&w=800&q=80" alt="Kitchen Tile Installation - Pattern Detail" />
-        <image src="https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=800&q=80" alt="Kitchen Tile Installation - Full View" />
-      </images>
-    </project>
-    
-    <project id="8" title="Bathroom Tile Work" category="tile" description="Waterproof tile installation with custom mosaic accents.">
-      <images>
-        <image src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80" alt="Bathroom Tile Work - Main View" />
-        <image src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" alt="Bathroom Tile Work - Mosaic Detail" />
-        <image src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80" alt="Bathroom Tile Work - Complete" />
-      </images>
-    </project>
-
-    <project id="9" title="Stone Entryway" category="tile" description="Natural stone flooring installation for elegant entryways.">
-      <images>
-        <image src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" alt="Stone Entryway - Main View" />
-        <image src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80" alt="Stone Entryway - Detail" />
-        <image src="https://images.unsplash.com/photo-1556912167-f556f1da3b3c?auto=format&fit=crop&w=800&q=80" alt="Stone Entryway - Pattern" />
-      </images>
-    </project>
-    
-    <!-- Demolition Services Projects -->
-    <project id="10" title="Professional Demolition Work" category="demolition" description="Complete floor demolition and preparation for new installation.">
+    <project id="4" title="Professional Demolition Work" category="demolition" description="Complete floor demolition and preparation for new installation.">
       <images>
         <image src="https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&w=800&q=80" alt="Professional Demolition Work - Before" />
         <image src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80" alt="Professional Demolition Work - During" />
-        <image src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80" alt="Professional Demolition Work - After Prep" />
       </images>
     </project>
-
-    <project id="11" title="Tile Removal Service" category="demolition" description="Expert tile and adhesive removal with proper disposal.">
+    
+    <project id="5" title="Open Concept Hardwood" category="hardwood" description="Seamless hardwood installation throughout open floor plan.">
       <images>
-        <image src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80" alt="Tile Removal Service - Process" />
-        <image src="https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&w=800&q=80" alt="Tile Removal Service - Tools" />
-        <image src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80" alt="Tile Removal Service - Clean Subfloor" />
+        <image src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80" alt="Open Concept Hardwood - Main View" />
+        <image src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=800&q=80" alt="Open Concept Hardwood - Living Area" />
+        <image src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Open Concept Hardwood - Kitchen Connection" />
       </images>
     </project>
-
-    <project id="12" title="Hardwood Removal & Prep" category="demolition" description="Careful hardwood removal and subfloor preparation.">
+    
+    <project id="6" title="Bathroom Tile Work" category="tile" description="Waterproof tile installation with custom mosaic accents.">
       <images>
-        <image src="https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&w=800&q=80" alt="Hardwood Removal - Before" />
-        <image src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80" alt="Hardwood Removal - In Progress" />
-        <image src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=800&q=80" alt="Hardwood Removal - Prepared Surface" />
+        <image src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80" alt="Bathroom Tile Work - Main View" />
+        <image src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" alt="Bathroom Tile Work - Mosaic Detail" />
       </images>
     </project>
   </projects>

@@ -14,17 +14,9 @@ const Gallery = () => {
     imageIndex: number;
   } | null>(null);
 
-  console.log('Gallery render - data:', data);
-  console.log('Gallery render - loading:', loading);
-  console.log('Gallery render - error:', error);
-  console.log('Gallery render - selectedCategory:', selectedCategory);
-
   const filteredProjects = selectedCategory === "all" 
     ? data.projects 
     : data.projects.filter(project => project.category === selectedCategory);
-
-  console.log('Filtered projects:', filteredProjects);
-  console.log('Filtered projects count:', filteredProjects.length);
 
   if (loading) {
     return (
@@ -71,23 +63,19 @@ const Gallery = () => {
       <section className="py-8 bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-2">
-            {data.categories.length > 0 ? (
-              data.categories.map((category) => (
-                <button
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.id)}
-                  className={`px-6 py-2 rounded-full font-medium transition-colors ${
-                    selectedCategory === category.id
-                      ? "bg-amber-700 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-amber-100 hover:text-amber-700"
-                  }`}
-                >
-                  {category.name}
-                </button>
-              ))
-            ) : (
-              <p className="text-gray-500">No categories available</p>
-            )}
+            {data.categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setSelectedCategory(category.id)}
+                className={`px-6 py-2 rounded-full font-medium transition-colors ${
+                  selectedCategory === category.id
+                    ? "bg-amber-700 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-amber-100 hover:text-amber-700"
+                }`}
+              >
+                {category.name}
+              </button>
+            ))}
           </div>
         </div>
       </section>
@@ -95,56 +83,43 @@ const Gallery = () => {
       {/* Gallery Grid */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {filteredProjects.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredProjects.map((project) => (
-                <div key={project.id} className="group cursor-pointer">
-                  <div 
-                    className="relative overflow-hidden rounded-lg shadow-lg"
-                    onClick={() => setSelectedProject({ project, imageIndex: 0 })}
-                  >
-                    <img
-                      src={project.images[0]?.src}
-                      alt={project.images[0]?.alt}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                      onError={(e) => {
-                        console.error('Image failed to load:', project.images[0]?.src);
-                        e.currentTarget.src = 'https://via.placeholder.com/400x300?text=Image+Not+Found';
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                      <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
-                        <div className="text-lg font-semibold mb-2">View Gallery</div>
-                        <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mx-auto">
-                          <span className="text-lg">+</span>
-                        </div>
-                        {project.images.length > 1 && (
-                          <div className="text-sm mt-2">
-                            {project.images.length} images
-                          </div>
-                        )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredProjects.map((project) => (
+              <div key={project.id} className="group cursor-pointer">
+                <div 
+                  className="relative overflow-hidden rounded-lg shadow-lg"
+                  onClick={() => setSelectedProject({ project, imageIndex: 0 })}
+                >
+                  <img
+                    src={project.images[0]?.src}
+                    alt={project.images[0]?.alt}
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                    <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                      <div className="text-lg font-semibold mb-2">View Gallery</div>
+                      <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mx-auto">
+                        <span className="text-lg">+</span>
                       </div>
+                      {project.images.length > 1 && (
+                        <div className="text-sm mt-2">
+                          {project.images.length} images
+                        </div>
+                      )}
                     </div>
                   </div>
-                  <div className="mt-4">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                      {project.description}
-                    </p>
-                  </div>
                 </div>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">No projects found for the selected category.</p>
-              <p className="text-gray-400 text-sm mt-2">
-                Total projects available: {data.projects.length}
-              </p>
-            </div>
-          )}
+                <div className="mt-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {project.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
