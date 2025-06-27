@@ -43,11 +43,13 @@ const Gallery = () => {
     );
   }
 
+  // Filter images based on selected category
   const filteredImages = selectedCategory === "all" 
     ? data.images 
     : data.images.filter(image => image.category === selectedCategory);
 
   const openViewer = (imageIndex: number) => {
+    // Use only the filtered images for the viewer
     setViewerImages(filteredImages);
     setCurrentImageIndex(imageIndex);
     setShowViewer(true);
@@ -64,6 +66,9 @@ const Gallery = () => {
   const previousImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + viewerImages.length) % viewerImages.length);
   };
+
+  // Get current category name for display
+  const currentCategoryName = data.categories.find(cat => cat.id === selectedCategory)?.name || "All Projects";
 
   return (
     <div className="min-h-screen">
@@ -106,6 +111,16 @@ const Gallery = () => {
       {/* Gallery Grid */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Category Title */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              {currentCategoryName}
+            </h2>
+            <p className="text-gray-600">
+              {filteredImages.length} {filteredImages.length === 1 ? 'project' : 'projects'} in this category
+            </p>
+          </div>
+
           {filteredImages.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-lg text-gray-600">No images found for this category.</p>
