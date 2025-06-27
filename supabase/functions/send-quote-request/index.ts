@@ -29,10 +29,10 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Sending quote request email for:", name);
 
-    // Send email to business owner
+    // Send email to business owner - CHANGE THIS EMAIL ADDRESS
     const emailResponse = await resend.emails.send({
       from: "Quote Request <onboarding@resend.dev>",
-      to: ["usfilipe@gmail.com"],
+      to: ["your-new-email@example.com"], // <-- Change this to your desired email
       subject: `New Quote Request from ${name}`,
       html: `
         <h2>New Quote Request</h2>
