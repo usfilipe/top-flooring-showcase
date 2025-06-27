@@ -52,7 +52,7 @@ const About = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=600&q=80"
+                src="https://github.com/usfilipe/top-flooring-showcase/blob/main/src/photos/Banner/about.png?raw=true"
                 alt="Professional flooring installation"
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
