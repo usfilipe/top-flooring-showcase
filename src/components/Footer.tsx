@@ -74,7 +74,7 @@ const Footer = () => {
                 (689) 255-7378
               </p>
               <p>roberto.topflooring@gmail.com</p>
-              <p>[Insert your city/state here]</p>
+              <p>Orlando-FL</p>
               <p className="text-sm mt-4">
                 Mon-Fri: 8:00 AM - 6:00 PM<br />
                 Sat: 9:00 AM - 4:00 PM<br />
