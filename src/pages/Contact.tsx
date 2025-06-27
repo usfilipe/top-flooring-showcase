@@ -8,9 +8,11 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Phone } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,23 +21,47 @@ const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    
-    toast({
-      title: "Quote Request Sent!",
-      description: "We'll contact you within 24 hours to schedule your free consultation.",
-    });
+    setIsSubmitting(true);
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: ""
-    });
+    try {
+      console.log("Submitting quote request:", formData);
+      
+      const { data, error } = await supabase.functions.invoke('send-quote-request', {
+        body: formData
+      });
+
+      if (error) {
+        console.error("Error sending quote request:", error);
+        throw error;
+      }
+
+      console.log("Quote request sent successfully:", data);
+
+      toast({
+        title: "Quote Request Sent!",
+        description: "We'll contact you within 24 hours to schedule your free consultation.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: ""
+      });
+    } catch (error: any) {
+      console.error("Failed to send quote request:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send quote request. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -142,10 +168,11 @@ const Contact = () => {
 
                     <Button
                       type="submit"
+                      disabled={isSubmitting}
                       className="w-full bg-amber-700 hover:bg-amber-800 text-white py-3"
                     >
                       <Phone className="w-4 h-4 mr-2" />
-                      Send Quote Request
+                      {isSubmitting ? "Sending..." : "Send Quote Request"}
                     </Button>
                   </form>
                 </CardContent>
