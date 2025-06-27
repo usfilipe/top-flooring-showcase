@@ -1,18 +1,19 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <gallery>
   <categories>
     <category id="all" name="All Projects" />
     <category id="hardwood" name="Hardwood" />
-    <category id="vinyl" name="Vinyl & Laminate" />
-    <category id="tile" name="Tile & Stone" />
+    <category id="vinyl" name="Vinyl &amp; Laminate" />
+    <category id="tile" name="Tile &amp; Stone" />
     <category id="refinishing" name="Refinishing" />
   </categories>
   <images>
-    <image id="1" category="hardwood" title="Modern Living Room Hardwood" description="Beautiful oak hardwood flooring installation in a contemporary living space." src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80" />
-    <image id="2" category="tile" title="Kitchen Tile Installation" description="Elegant ceramic tile flooring with custom pattern design." src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80" />
-    <image id="3" category="vinyl" title="Luxury Vinyl Plank Bedroom" description="Water-resistant luxury vinyl plank flooring in master bedroom." src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80" />
-    <image id="4" category="refinishing" title="Hardwood Floor Refinishing" description="Complete refinishing of existing hardwood floors with modern stain." src="https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&fit=crop&w=800&q=80" />
-    <image id="5" category="hardwood" title="Open Concept Hardwood" description="Seamless hardwood installation throughout open floor plan." src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80" />
-    <image id="6" category="tile" title="Bathroom Tile Work" description="Waterproof tile installation with custom mosaic accents." src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80" />
+    <image id="1" category="hardwood" title="Modern Living Room Hardwood" description="Beautiful oak hardwood flooring installation in a contemporary living space." src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+    <image id="2" category="tile" title="Kitchen Tile Installation" description="Elegant ceramic tile flooring with custom pattern design." src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+    <image id="3" category="vinyl" title="Luxury Vinyl Plank Bedroom" description="Water-resistant luxury vinyl plank flooring in master bedroom." src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+    <image id="4" category="refinishing" title="Hardwood Floor Refinishing" description="Complete refinishing of existing hardwood floors with modern stain." src="https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+    <image id="5" category="hardwood" title="Open Concept Hardwood" description="Seamless hardwood installation throughout open floor plan." src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+    <image id="6" category="tile" title="Bathroom Tile Work" description="Waterproof tile installation with custom mosaic accents." src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
   </images>
 </gallery>
