@@ -32,20 +32,21 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded over 8 years ago, Top Flooring Services has been serving the community 
-                  with premium flooring solutions. What started as a small family business has grown 
-                  into a trusted name in the flooring industry, while maintaining our core values 
-                  of quality, integrity, and customer satisfaction.
+                  With over 8 years of experience in the flooring industry, we bring a commitment to craftsmanship and quality that stands out. 
+                  Having worked extensively across Europe, we’ve developed a strong foundation in both traditional and modern flooring techniques. 
+                  For the past 4 years, we’ve proudly brought that expertise to clients in the United States, 
+                  delivering tailored flooring solutions that combine European precision with local reliability.
+
                 </p>
                 <p>
-                  As a licensed and family-owned business, we understand the importance of treating 
-                  your home with the same care and attention we would give our own. Every project, 
-                  big or small, receives our full commitment to excellence.
+                  Our company was built on the values of integrity, attention to detail, and customer satisfaction. 
+                  Whether you’re updating a single room or undertaking a full renovation, our skilled team approaches each project with care and 
+                  professionalism—treating your space as if it were our own.
+
                 </p>
                 <p>
-                  Our team of skilled craftsmen brings years of experience and expertise to every 
-                  installation, ensuring that your flooring not only looks beautiful but stands 
-                  the test of time.
+                  We believe great flooring should do more than look good—it should last, function seamlessly, and enhance the comfort of your home or business. 
+                  That’s why we’re dedicated to delivering results that exceed expectations, every time.
                 </p>
               </div>
             </div>
