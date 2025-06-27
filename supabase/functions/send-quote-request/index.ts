@@ -64,7 +64,7 @@ const handler = async (req: Request): Promise<Response> => {
         <p><strong>Phone:</strong> ${phone}</p>
         ${message ? `<p><strong>Additional Details:</strong> ${message}</p>` : ''}
         
-        <p>If you have any urgent questions, please call us at (808) 123-4567.</p>
+        <p>If you have any urgent questions, please call us at (689) 255-7378.</p>
         
         <p>Best regards,<br>
         Top Flooring Team</p>
