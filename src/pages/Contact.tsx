@@ -149,7 +149,7 @@ const Contact = () => {
                           <SelectItem value="hardwood">Hardwood Installation</SelectItem>
                           <SelectItem value="vinyl">Vinyl & Laminate</SelectItem>
                           <SelectItem value="tile">Tile & Stone</SelectItem>
-                          <SelectItem value="refinishing">Floor Refinishing</SelectItem>
+                          <SelectItem value="demolition">Demolition Services</SelectItem>
                           <SelectItem value="consultation">General Consultation</SelectItem>
                         </SelectContent>
                       </Select>
@@ -190,7 +190,7 @@ const Contact = () => {
                 <CardContent className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">(808) 123-4567</p>
+                    <p className="text-gray-600">(689) 255-7378</p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
@@ -198,7 +198,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Service Area</h4>
-                    <p className="text-gray-600">[Insert your city/state here]</p>
+                    <p className="text-gray-600">Orlando-FL</p>
                   </div>
                 </CardContent>
               </Card>
@@ -216,11 +216,11 @@ const Contact = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Saturday</span>
-                    <span className="text-gray-900">9:00 AM - 4:00 PM</span>
+                    <span className="text-gray-900">9:00 AM - 6:00 PM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Sunday</span>
-                    <span className="text-gray-900">Closed</span>
+                    <span className="text-gray-600">Emergency</span>
+                    <span className="text-gray-900">Open 24 Hours 7 days a week</span>
                   </div>
                 </CardContent>
               </Card>
