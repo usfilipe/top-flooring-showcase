@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { GalleryImage } from '@/hooks/useGalleryData';
@@ -19,13 +19,29 @@ export const ImageViewer = ({
   onNext, 
   onPrevious 
 }: ImageViewerProps) => {
+  const [imageOrientation, setImageOrientation] = useState<'horizontal' | 'vertical'>('horizontal');
   const currentImage = images[currentIndex];
   
   if (!currentImage) return null;
 
+  const handleImageLoad = (event: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = event.currentTarget;
+    const orientation = img.naturalWidth > img.naturalHeight ? 'horizontal' : 'vertical';
+    setImageOrientation(orientation);
+  };
+
+  // Reset orientation when image changes
+  useEffect(() => {
+    setImageOrientation('horizontal');
+  }, [currentIndex]);
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-lg max-w-4xl max-h-[90vh] w-full overflow-hidden">
+      <div className={`bg-white rounded-lg overflow-hidden ${
+        imageOrientation === 'vertical' 
+          ? 'max-w-2xl max-h-[90vh]' 
+          : 'max-w-4xl max-h-[90vh]'
+      } w-full`}>
         {/* Header */}
         <div className="flex justify-between items-center p-4 border-b">
           <h3 className="text-lg font-semibold text-gray-900">
@@ -46,7 +62,10 @@ export const ImageViewer = ({
           <img
             src={currentImage.src}
             alt={currentImage.title}
-            className="w-full h-96 object-cover"
+            onLoad={handleImageLoad}
+            className={`w-full object-contain ${
+              imageOrientation === 'vertical' ? 'h-96 md:h-[500px]' : 'h-96'
+            }`}
           />
           
           {/* Navigation Buttons */}

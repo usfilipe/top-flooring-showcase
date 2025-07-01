@@ -12,6 +12,17 @@ const Gallery = () => {
   const [viewerImages, setViewerImages] = useState<any[]>([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showViewer, setShowViewer] = useState(false);
+  const [imageOrientations, setImageOrientations] = useState<{[key: string]: 'horizontal' | 'vertical'}>({});
+
+  // Function to detect image orientation
+  const handleImageLoad = (imageId: string, event: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = event.currentTarget;
+    const orientation = img.naturalWidth > img.naturalHeight ? 'horizontal' : 'vertical';
+    setImageOrientations(prev => ({
+      ...prev,
+      [imageId]: orientation
+    }));
+  };
 
   // Add debugging logs
   console.log("Gallery data:", data);
@@ -139,37 +150,43 @@ const Gallery = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredImages.map((image, index) => (
-                <div 
-                  key={image.id} 
-                  className="group cursor-pointer"
-                  onClick={() => openViewer(index)}
-                >
-                  <div className="relative overflow-hidden rounded-lg shadow-lg">
-                    <img
-                      src={image.src}
-                      alt={image.title}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                      <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
-                        <div className="text-lg font-semibold mb-2">View Details</div>
-                        <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mx-auto">
-                          <span className="text-lg">+</span>
+              {filteredImages.map((image, index) => {
+                const orientation = imageOrientations[image.id] || 'horizontal';
+                return (
+                  <div 
+                    key={image.id} 
+                    className="group cursor-pointer"
+                    onClick={() => openViewer(index)}
+                  >
+                    <div className="relative overflow-hidden rounded-lg shadow-lg">
+                      <img
+                        src={image.src}
+                        alt={image.title}
+                        onLoad={(e) => handleImageLoad(image.id, e)}
+                        className={`w-full object-cover group-hover:scale-105 transition-transform duration-300 ${
+                          orientation === 'vertical' ? 'h-80' : 'h-64'
+                        }`}
+                      />
+                      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                        <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                          <div className="text-lg font-semibold mb-2">View Details</div>
+                          <div className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center mx-auto">
+                            <span className="text-lg">+</span>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div className="mt-4">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        {image.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm">
+                        {image.description}
+                      </p>
+                    </div>
                   </div>
-                  <div className="mt-4">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      {image.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                      {image.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
