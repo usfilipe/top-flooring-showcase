@@ -10,22 +10,22 @@ const Index = () => {
     {
       title: "Hardwood Installation",
       description: "Expert installation of solid and engineered hardwood floors with premium finishes.",
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=600&q=80"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/hardwood.jpg"
     },
     {
       title: "Vinyl & Laminate",
       description: "Durable and beautiful vinyl and laminate flooring solutions for any space.",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/vinyl.jpg"
     },
     {
       title: "Tile & Stone",
       description: "Professional tile and stone installation for kitchens, bathrooms, and more.",
-      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=600&q=80"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/tile.jpg"
     },
     {
       title: "Demolition Services",
       description: "Professional demolition and removal services to prepare your space for new flooring.",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/demolition.png"
     }
   ];
 
