@@ -2,23 +2,68 @@
 <gallery>
   <categories>
     <category id="all" name="All Projects" />
-    <category id="vinyl" name="Vinyl, Laminated &amp; Wood" />
+    <category id="vinyl_laminated_wood" name="Vinyl, Laminated &amp; Wood" />
     <category id="tile" name="Tile &amp; Stone" />
-    <category id="backsplash" name="Backsplash" />
+    <category id="backsplash_tile" name="Backsplash" />
     <category id="stair" name="Stair" />
   </categories>
   <images>
-    <image id="1" category="vinyl" title="Vinyl, Laminated &amp; Wood Project 1" description="High-quality vinyl flooring installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/01.jpg" />
-    <image id="2" category="vinyl" title="Vinyl, Laminated &amp; Wood Project 2" description="Beautiful laminated wood flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/02.jpg" />
-    
-    <image id="3" category="tile" title="Tile &amp; Stone Project 1" description="Elegant tile installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/01.jpg" />
-    <image id="4" category="tile" title="Tile &amp; Stone Project 2" description="Premium stone flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/02.jpg" />
+    <image id="211" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/01.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/02.jpg" />
+    <image id="2" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/03.jpg" />
+    <image id="3" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/04.jpg" />
+    <image id="4" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/05.jpg" />
+    <image id="5" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/06.jpg" />
+    <image id="6" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/07.jpg" />
+    <image id="7" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/08.jpg" />
+    <image id="8" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/09.jpg" />
+    <image id="9" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/10.jpg" />
+    <image id="10" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/11.jpg" />
+    <image id="11" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/12.jpg" />
+    <image id="12" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/13.jpg" />
+    <image id="13" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/14.jpg" />
+    <image id="14" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/15.jpg" />
+    <image id="15" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/16.jpg" />
+    <image id="16" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/17.jpg" />
+    <image id="17" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/18.jpg" />
+    <image id="18" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/19.jpg" />
+    <image id="19" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/20.jpg" />
+   
+    <image id="20" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/01.jpg" />
+    <image id="21" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/02.jpg" />
+    <image id="221" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/03.jpg" />
+    <image id="3212" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/04.jpg" />
+    <image id="4342" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/05.jpg" />
+    <image id="234" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/6.jpg" />
+    <image id="222" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/7.jpg" />
+    <image id="23342" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/8.jpg" />
+    <image id="122" category="tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/9.jpg" />
 
-    <image id="5" category="backsplash" title="Backsplash Project 1" description="Custom backsplash tile work" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/01.jpg" />
-    <image id="6" category="backsplash" title="Backsplash Project 2" description="Modern backsplash design" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/02.jpg" />
+    <image id="356" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/01.jpg" />
+    <image id="345" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/02.jpg" />
+    <image id="63" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/03.jpg" />
+    <image id="357" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/04.jpg" />
+    <image id="334" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/05.jpg" />
+    <image id="334" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/06.jpg" />
+    <image id="376" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/07.jpg" />
+    <image id="663" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/08.jpg" />
+    <image id="673" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/09.jpg" />
+    <image id="6763" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/10.jpg" />
+    <image id="343" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/11.jpg" />
+    <image id="33" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/12.jpg" />
+    <image id="323" category="backsplash_tile" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/13.jpg" />
 
-    <image id="7" category="atair" title="Stair Project 1" description="Laminate stair installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/01.jpg" />
-    <image id="8" category="stair" title="Stair Project 2" description="Professional stair flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/02.jpg" />
- 
+    <image id="434" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/01.jpg" />
+    <image id="43" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/02.jpg" />
+    <image id="44" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/03.jpg" />
+    <image id="45" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/04.jpg" />
+    <image id="46" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/05.jpg" />
+    <image id="47" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/06.jpg" />
+    <image id="48" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/07.jpg" />
+    <image id="49" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/08.jpg" />
+    <image id="40" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/09.jpg" />
+    <image id="412" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/10.jpg" />
+    <image id="41" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/11.jpg" />
+    <image id="412" category="stair" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/12.jpg" />
     </images>
 </gallery>
