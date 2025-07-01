@@ -275,7 +275,7 @@ const Contact = () => {
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg"
           >
             <Phone className="w-5 h-5 mr-2" />
-            Call (808) 123-4567 Now
+            Call (689) 255-7378 Now
           </Button>
         </div>
       </section>
