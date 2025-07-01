@@ -2,19 +2,36 @@
 <gallery>
   <categories>
     <category id="all" name="All Projects" />
-    <category id="hardwood" name="Hardwood" />
-    <category id="vinyl" name="Vinyl &amp; Laminate" />
+    <category id="vinyl_laminated_wood" name="Vinyl, Laminated &amp; Wood" />
     <category id="tile" name="Tile &amp; Stone" />
-    <category id="refinishing" name="Refinishing" />
-    
+    <category id="stair" name="Stair" />
   </categories>
   <images>
-    <image id="1" category="hardwood" title="Modern Living Room Hardwood" description="Beautiful oak hardwood flooring installation in a contemporary living space." src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
-    <image id="2" category="tile" title="Kitchen Tile Installation" description="Elegant ceramic tile flooring with custom pattern design." src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/01.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/02.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/03.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/04.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/05.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/06.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/07.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/08.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/09.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/10.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/11.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/12.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/13.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/14.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/15.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/16.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/17.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/18.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/19.jpg" />
+    <image id="1" category="vinyl_laminated_wood" title="" description="" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/20.jpg" />
+    <image id="2" category="tile" title="" description="" src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
     <image id="3" category="vinyl" title="Luxury Vinyl Plank Bedroom" description="Water-resistant luxury vinyl plank flooring in master bedroom." src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
     <image id="4" category="refinishing" title="Hardwood Floor Refinishing" description="Complete refinishing of existing hardwood floors with modern stain." src="https://images.unsplash.com/photo-1486718448742-163732cd1544?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
     <image id="5" category="hardwood" title="Open Concept Hardwood" description="Seamless hardwood installation throughout open floor plan." src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
     <image id="6" category="tile" title="Bathroom Tile Work" description="Waterproof tile installation with custom mosaic accents." src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&amp;fit=crop&amp;w=800&amp;q=80" />
-   
+    <image id="7" category="teste" title="Teste" description="Esse e um teste." src="https://media.tarkett-image.com/medium/IN_HP_RR_ICONIK_Powell_Oak_Bronze_landscape.jpg" />
   </images>
 </gallery>
