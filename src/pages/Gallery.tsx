@@ -13,6 +13,10 @@ const Gallery = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showViewer, setShowViewer] = useState(false);
 
+  // Add debugging logs
+  console.log("Gallery data:", data);
+  console.log("Selected category:", selectedCategory);
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -48,6 +52,9 @@ const Gallery = () => {
     ? data.images 
     : data.images.filter(image => image.category === selectedCategory);
 
+  console.log("Filtered images:", filteredImages);
+  console.log("All images:", data.images);
+
   const openViewer = (imageIndex: number) => {
     // Use only the filtered images for the viewer
     setViewerImages(filteredImages);
@@ -69,6 +76,11 @@ const Gallery = () => {
 
   // Get current category name for display
   const currentCategoryName = data.categories.find(cat => cat.id === selectedCategory)?.name || "All Projects";
+
+  const handleCategoryChange = (categoryId: string) => {
+    console.log("Changing category to:", categoryId);
+    setSelectedCategory(categoryId);
+  };
 
   return (
     <div className="min-h-screen">
@@ -94,7 +106,7 @@ const Gallery = () => {
             {data.categories.map((category) => (
               <button
                 key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
+                onClick={() => handleCategoryChange(category.id)}
                 className={`px-6 py-2 rounded-full font-medium transition-colors ${
                   selectedCategory === category.id
                     ? "bg-amber-700 text-white"
