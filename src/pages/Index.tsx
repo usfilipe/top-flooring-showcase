@@ -35,7 +35,7 @@ const Index = () => {
       <section 
         className="relative py-32 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/F3/IMG-20250616-WA0078.jpg')`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/home/01.jpg')`
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
