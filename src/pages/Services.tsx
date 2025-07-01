@@ -15,7 +15,7 @@ const Services = () => {
         "Subfloor preparation",
         "Professional installation"
       ],
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=600&q=80"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/hardwood.jpg"
     },
     {
       title: "Vinyl & Laminate Flooring",
@@ -27,7 +27,7 @@ const Services = () => {
         "Waterproof options available",
         "Wide variety of styles and colors"
       ],
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=600&q=80"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/vinyl.jpg"
     },
     {
       title: "Tile & Stone Installation",
@@ -39,7 +39,7 @@ const Services = () => {
         "Waterproofing and sealing",
         "Grout and caulk finishing"
       ],
-      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=600&q=80"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/tile.jpg"
     },
     {
       title: "Demolition Services",
@@ -51,7 +51,7 @@ const Services = () => {
         "Site preparation",
         "Environmental safety compliance"
       ],
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/demolition.jpg"
     }
   ];
 
