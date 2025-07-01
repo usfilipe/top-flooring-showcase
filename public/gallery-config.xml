@@ -3,23 +3,23 @@
 <gallery>
   <categories>
     <category id="all" name="All Projects" />
-    <category id="1" name="Vinyl, Laminated &amp; Wood" />
-    <category id="2" name="Tile &amp; Stone" />
-    <category id="3" name="Backsplash" />
-    <category id="4" name="Stair" />
+    <category id="vinyl" name="Vinyl, Laminated &amp; Wood" />
+    <category id="tile" name="Tile &amp; Stone" />
+    <category id="backsplash" name="Backsplash" />
+    <category id="stair" name="Stair" />
   </categories>
   <images>
-    <image id="1" category="1" title="Vinyl, Laminated &amp; Wood Project 1" description="High-quality vinyl flooring installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/01.jpg" />
-    <image id="2" category="1" title="Vinyl, Laminated &amp; Wood Project 2" description="Beautiful laminated wood flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/02.jpg" />
+    <image id="1" category="vinyl" title="Vinyl, Laminated &amp; Wood Project 1" description="High-quality vinyl flooring installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/01.jpg" />
+    <image id="2" category="vinyl" title="Vinyl, Laminated &amp; Wood Project 2" description="Beautiful laminated wood flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/vinyl_laminated_wood/02.jpg" />
     
-    <image id="3" category="2" title="Tile &amp; Stone Project 1" description="Elegant tile installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/01.jpg" />
-    <image id="4" category="2" title="Tile &amp; Stone Project 2" description="Premium stone flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/02.jpg" />
+    <image id="3" category="tile" title="Tile &amp; Stone Project 1" description="Elegant tile installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/01.jpg" />
+    <image id="4" category="tile" title="Tile &amp; Stone Project 2" description="Premium stone flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/tiles/02.jpg" />
 
-    <image id="5" category="3" title="Backsplash Project 1" description="Custom backsplash tile work" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/01.jpg" />
-    <image id="6" category="3" title="Backsplash Project 2" description="Modern backsplash design" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/02.jpg" />
+    <image id="5" category="backsplash" title="Backsplash Project 1" description="Custom backsplash tile work" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/01.jpg" />
+    <image id="6" category="backsplash" title="Backsplash Project 2" description="Modern backsplash design" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/backsplash_tile/02.jpg" />
 
-    <image id="7" category="4" title="Stair Project 1" description="Laminate stair installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/01.jpg" />
-    <image id="8" category="4" title="Stair Project 2" description="Professional stair flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/02.jpg" />
+    <image id="7" category="atair" title="Stair Project 1" description="Laminate stair installation" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/01.jpg" />
+    <image id="8" category="stair" title="Stair Project 2" description="Professional stair flooring" src="https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/laminate_stair/02.jpg" />
  
     </images>
 </gallery>
