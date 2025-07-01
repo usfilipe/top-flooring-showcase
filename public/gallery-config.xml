@@ -2,8 +2,8 @@
 <gallery>
   <categories>
     <category id="all" name="All Projects" />
-    <category id="vinyl_laminated_wood" name="Vinyl, Laminated &amp; Wood" />
-    <category id="tile" name="Tile &amp; Stone" />
+    <category id="1" name="Vinyl, Laminated &amp; Wood" />
+    <category id="2" name="Tile &amp; Stone" />
     <category id="backsplash_tile" name="Backsplash" />
     <category id="stair" name="Stair" />
   </categories>
