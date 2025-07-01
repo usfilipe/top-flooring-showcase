@@ -51,7 +51,7 @@ const Services = () => {
         "Site preparation",
         "Environmental safety compliance"
       ],
-      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/demolition.jpg"
+      image: "https://raw.githubusercontent.com/usfilipe/top-flooring-showcase/refs/heads/main/src/photos/services/demolition.png"
     }
   ];
 
