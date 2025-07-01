@@ -239,7 +239,7 @@ const Contact = () => {
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-amber-700 rounded-full mr-3"></div>
-                      15+ years of experience
+                      8+ years of experience
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-amber-700 rounded-full mr-3"></div>
