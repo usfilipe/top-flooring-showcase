@@ -149,7 +149,7 @@ const Gallery = () => {
               <p className="text-lg text-gray-600">No images found for this category.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
               {filteredImages.map((image, index) => {
                 const orientation = imageOrientations[image.id] || 'horizontal';
                 return (
@@ -158,14 +158,12 @@ const Gallery = () => {
                     className="group cursor-pointer"
                     onClick={() => openViewer(index)}
                   >
-                    <div className="relative overflow-hidden rounded-lg shadow-lg">
+                    <div className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
                       <img
                         src={image.src}
                         alt={image.title}
                         onLoad={(e) => handleImageLoad(image.id, e)}
-                        className={`w-full object-cover group-hover:scale-105 transition-transform duration-300 ${
-                          orientation === 'vertical' ? 'h-80' : 'h-64'
-                        }`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                         <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
@@ -177,10 +175,10 @@ const Gallery = () => {
                       </div>
                     </div>
                     <div className="mt-4">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
                         {image.title}
                       </h3>
-                      <p className="text-gray-600 text-sm">
+                      <p className="text-gray-600 text-sm line-clamp-3">
                         {image.description}
                       </p>
                     </div>
