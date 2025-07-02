@@ -31,7 +31,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to business owner
     const emailResponse = await resend.emails.send({
-      from: "Quote Request <onboarding@resend.dev>",
+      from: "Quote Request <contact@topflooringservices.com>",
       to: ["roberto.topflooring@gmail.com"],
       subject: `New Quote Request from ${name}`,
       html: `
@@ -52,7 +52,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to customer
     const confirmationResponse = await resend.emails.send({
-      from: "Top Flooring <onboarding@resend.dev>",
+      from: "Top Flooring <contact@topflooringservices.com>",
       to: [email],
       subject: "Quote Request Received - We'll Contact You Soon!",
       html: `
