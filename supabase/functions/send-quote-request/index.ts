@@ -31,7 +31,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to business owner
     const emailResponse = await resend.emails.send({
-      from: "Quote Request <send@topflooringservices.com>",
+      from: "Quote Request <quotes@topflooringservices.com>",
       to: ["roberto.topflooring@gmail.com"],
       subject: `New Quote Request from ${name}`,
       html: `
@@ -52,7 +52,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to customer
     const confirmationResponse = await resend.emails.send({
-      from: "Top Flooring <onboard@topflooringservices.com>",
+      from: "Top Flooring Services <hello@topflooringservices.com>",
       to: [email],
       subject: "Quote Request Received - We'll Contact You Soon!",
       html: `
@@ -64,10 +64,10 @@ const handler = async (req: Request): Promise<Response> => {
         <p><strong>Phone:</strong> ${phone}</p>
         ${message ? `<p><strong>Additional Details:</strong> ${message}</p>` : ''}
         
-        <p>If you have any urgent questions, please call us aaaaaat (689) 255-7378.</p>
+        <p>If you have any urgent questions, please call us at (689) 255-7378.</p>
         
         <p>Best regards,<br>
-        Top Flooring Team</p>
+        Top Flooring Services Team</p>
       `,
     });
 
