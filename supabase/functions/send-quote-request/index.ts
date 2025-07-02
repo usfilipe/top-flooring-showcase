@@ -52,7 +52,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to customer
     const confirmationResponse = await resend.emails.send({
-      from: "Top Flooring Services <hello@topflooringservices.com>",
+      from: "Top Flooring Services <no-reply@topflooringservices.com>",
       to: [email],
       subject: "Quote Request Received - We'll Contact You Soon!",
       html: `
