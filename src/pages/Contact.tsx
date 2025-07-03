@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { Phone } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
@@ -23,6 +23,17 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Basic validation
+    if (!formData.name || !formData.email || !formData.phone) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields (Name, Email, Phone).",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -56,7 +67,7 @@ const Contact = () => {
       console.error("Failed to send quote request:", error);
       toast({
         title: "Error",
-        description: "Failed to send quote request. Please try again or call us directly.",
+        description: "Failed to send quote request. Please try again or call us directly at (689) 255-7378.",
         variant: "destructive",
       });
     } finally {
@@ -82,7 +93,7 @@ const Contact = () => {
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Ready to transform your floors? Contact us today for a free consultation 
-              and detailed estimate.
+              and detailed estimate for your flooring project.
             </p>
           </div>
         </div>
@@ -94,17 +105,20 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <Card>
+              <Card className="shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl text-gray-900">
                     Request Your Free Quote
                   </CardTitle>
+                  <p className="text-gray-600">Fill out the form below and we'll get back to you within 24 hours.</p>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="name">Full Name *</Label>
+                        <Label htmlFor="name" className="text-sm font-medium text-gray-700">
+                          Full Name *
+                        </Label>
                         <Input
                           id="name"
                           type="text"
@@ -112,10 +126,13 @@ const Contact = () => {
                           onChange={(e) => handleInputChange("name", e.target.value)}
                           required
                           className="mt-1"
+                          placeholder="Enter your full name"
                         />
                       </div>
                       <div>
-                        <Label htmlFor="phone">Phone Number *</Label>
+                        <Label htmlFor="phone" className="text-sm font-medium text-gray-700">
+                          Phone Number *
+                        </Label>
                         <Input
                           id="phone"
                           type="tel"
@@ -123,12 +140,15 @@ const Contact = () => {
                           onChange={(e) => handleInputChange("phone", e.target.value)}
                           required
                           className="mt-1"
+                          placeholder="(555) 123-4567"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <Label htmlFor="email">Email Address *</Label>
+                      <Label htmlFor="email" className="text-sm font-medium text-gray-700">
+                        Email Address *
+                      </Label>
                       <Input
                         id="email"
                         type="email"
@@ -136,14 +156,17 @@ const Contact = () => {
                         onChange={(e) => handleInputChange("email", e.target.value)}
                         required
                         className="mt-1"
+                        placeholder="your.email@example.com"
                       />
                     </div>
 
                     <div>
-                      <Label htmlFor="service">Service Needed</Label>
+                      <Label htmlFor="service" className="text-sm font-medium text-gray-700">
+                        Service Needed
+                      </Label>
                       <Select onValueChange={(value) => handleInputChange("service", value)}>
                         <SelectTrigger className="mt-1">
-                          <SelectValue placeholder="Select a service" />
+                          <SelectValue placeholder="Select a service (optional)" />
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="hardwood">Hardwood Installation</SelectItem>
@@ -151,17 +174,20 @@ const Contact = () => {
                           <SelectItem value="tile">Tile & Stone</SelectItem>
                           <SelectItem value="demolition">Demolition Services</SelectItem>
                           <SelectItem value="consultation">General Consultation</SelectItem>
+                          <SelectItem value="repair">Flooring Repair</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div>
-                      <Label htmlFor="message">Project Details</Label>
+                      <Label htmlFor="message" className="text-sm font-medium text-gray-700">
+                        Project Details
+                      </Label>
                       <Textarea
                         id="message"
                         value={formData.message}
                         onChange={(e) => handleInputChange("message", e.target.value)}
-                        placeholder="Tell us about your project - room size, preferred materials, timeline, etc."
+                        placeholder="Tell us about your project - room size, preferred materials, timeline, budget range, etc."
                         className="mt-1 min-h-[120px]"
                       />
                     </div>
@@ -169,10 +195,10 @@ const Contact = () => {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-amber-700 hover:bg-amber-800 text-white py-3"
+                      className="w-full bg-amber-700 hover:bg-amber-800 text-white py-3 text-lg font-semibold"
                     >
-                      <Phone className="w-4 h-4 mr-2" />
-                      {isSubmitting ? "Sending..." : "Send Quote Request"}
+                      <Phone className="w-5 h-5 mr-2" />
+                      {isSubmitting ? "Sending Request..." : "Send Quote Request"}
                     </Button>
                   </form>
                 </CardContent>
@@ -181,77 +207,98 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div className="space-y-8">
-              <Card>
+              <Card className="shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-xl text-gray-900">
+                  <CardTitle className="text-xl text-gray-900 flex items-center">
+                    <Mail className="w-5 h-5 mr-2 text-amber-700" />
                     Contact Information
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">(689) 255-7378</p>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="w-5 h-5 text-amber-700" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Phone</h4>
+                      <p className="text-gray-600">(689) 255-7378</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">contact@topflooring.com</p>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="w-5 h-5 text-amber-700" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Email</h4>
+                      <p className="text-gray-600">contact@topflooringservices.com</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Service Area</h4>
-                    <p className="text-gray-600">Orlando-FL</p>
+                  <div className="flex items-center space-x-3">
+                    <MapPin className="w-5 h-5 text-amber-700" />
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Service Area</h4>
+                      <p className="text-gray-600">Orlando, FL & Surrounding Areas</p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-xl text-gray-900">
+                  <CardTitle className="text-xl text-gray-900 flex items-center">
+                    <Clock className="w-5 h-5 mr-2 text-amber-700" />
                     Business Hours
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2">
-                  <div className="flex justify-between">
+                <CardContent className="space-y-3">
+                  <div className="flex justify-between items-center">
                     <span className="text-gray-600">Monday - Friday</span>
-                    <span className="text-gray-900">8:00 AM - 6:00 PM</span>
+                    <span className="text-gray-900 font-medium">8:00 AM - 6:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center">
                     <span className="text-gray-600">Saturday</span>
-                    <span className="text-gray-900">9:00 AM - 6:00 PM</span>
+                    <span className="text-gray-900 font-medium">9:00 AM - 5:00 PM</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Emergency</span>
-                    <span className="text-gray-900">Open 24 Hours 7 days a week</span>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-600">Sunday</span>
+                    <span className="text-gray-900 font-medium">Emergency Only</span>
+                  </div>
+                  <div className="border-t pt-3 mt-3">
+                    <div className="flex justify-between items-center">
+                      <span className="text-red-600 font-medium">Emergency Service</span>
+                      <span className="text-red-600 font-medium">24/7 Available</span>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="shadow-lg bg-amber-50">
                 <CardHeader>
                   <CardTitle className="text-xl text-gray-900">
-                    Why Choose Us?
+                    Why Choose Top Flooring Services?
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-gray-600">
+                  <ul className="space-y-3 text-gray-700">
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-amber-700 rounded-full mr-3"></div>
-                      Licensed and fully insured
+                      Licensed, bonded, and fully insured
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-amber-700 rounded-full mr-3"></div>
-                      8+ years of experience
+                      8+ years of professional experience
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-amber-700 rounded-full mr-3"></div>
-                      Family-owned business
+                      Family-owned local business
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-amber-700 rounded-full mr-3"></div>
-                      100% customer satisfaction
+                      100% customer satisfaction guarantee
                     </li>
                     <li className="flex items-center">
                       <div className="w-2 h-2 bg-amber-700 rounded-full mr-3"></div>
-                      Free consultations and estimates
+                      Free consultations and detailed estimates
+                    </li>
+                    <li className="flex items-center">
+                      <div className="w-2 h-2 bg-amber-700 rounded-full mr-3"></div>
+                      Quality materials and workmanship
                     </li>
                   </ul>
                 </CardContent>
@@ -261,20 +308,21 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Emergency Contact */}
-      <section className="py-16 bg-gray-50">
+      {/* Emergency Contact CTA */}
+      <section className="py-16 bg-red-50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Need Emergency Flooring Service?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            We offer emergency flooring repairs and water damage restoration services.
+            Water damage? Floor collapse? We offer 24/7 emergency flooring repairs and restoration services.
           </p>
           <Button
             size="lg"
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg"
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-semibold"
+            onClick={() => window.open('tel:+16892557378')}
           >
-            <Phone className="w-5 h-5 mr-2" />
+            <Phone className="w-6 h-6 mr-2" />
             Call (689) 255-7378 Now
           </Button>
         </div>

@@ -31,7 +31,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to business owner
     const emailResponse = await resend.emails.send({
-      from: 'no-reply@topflooringservices.com',
+      from: 'Top Flooring Services <no-reply@topflooringservices.com>',
       to: ["usfilipe@gmail.com"],
       subject: `New Quote Request from ${name}`,
       html: `
