@@ -226,7 +226,7 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-amber-700" />
                     <div>
                       <h4 className="font-semibold text-gray-900">Email</h4>
-                      <p className="text-gray-600">contact@topflooringservices.com</p>
+                      <p className="text-gray-600">roberto.topflooring@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
