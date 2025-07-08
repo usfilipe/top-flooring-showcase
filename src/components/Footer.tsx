@@ -76,9 +76,8 @@ const Footer = () => {
               <p>roberto.topflooring@gmail.com</p>
               <p>Orlando-FL</p>
               <p className="text-sm mt-4">
-                Mon-Fri: 8:00 AM - 6:00 PM<br />
-                Sat: 9:00 AM - 4:00 PM<br />
-                Sun: Closed
+                Mon-Sun: 6:30 AM - 9:00 PM<br />
+                Emergency: 24/7 Available
               </p>
             </div>
           </div>

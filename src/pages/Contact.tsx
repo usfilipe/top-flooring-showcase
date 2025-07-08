@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -248,16 +247,8 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Monday - Friday</span>
-                    <span className="text-gray-900 font-medium">8:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Saturday</span>
-                    <span className="text-gray-900 font-medium">9:00 AM - 5:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Sunday</span>
-                    <span className="text-gray-900 font-medium">Emergency Only</span>
+                    <span className="text-gray-600">Monday - Sunday</span>
+                    <span className="text-gray-900 font-medium">6:30 AM - 9:00 PM</span>
                   </div>
                   <div className="border-t pt-3 mt-3">
                     <div className="flex justify-between items-center">
