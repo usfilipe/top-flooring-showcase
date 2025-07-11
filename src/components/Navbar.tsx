@@ -24,9 +24,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-amber-800">
-              Top Flooring Services
-            </div>
+            <img 
+              src="/lovable-uploads/2d80258a-6c5e-4607-8bac-57f377f4fd33.png" 
+              alt="Top Flooring Services" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
